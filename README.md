@@ -2,6 +2,7 @@
 
 Step 1--Create an AWS EC2 instance/ Ubuntu
 
+
 Step 2--Install terraform in EC2 intsance with below links:-
 **sudo apt-get update && sudo apt-get install -y gnupg software-properties-common**
 
@@ -21,6 +22,8 @@ Step 2--Install terraform in EC2 intsance with below links:-
 
 --Install Terraform:-
 **sudo apt-get install terraform**
+
+
 
 
 Step 3--Create a main.tf file with the below contents:-
@@ -55,7 +58,27 @@ ports {
 }
 }
 
-Step 4: In case if docker is not installed 
+
+
+Step 4: In case if docker is not installed
+
         Install docker **sudo-apt-get install docker.io**
+        
         List container **sudo docker ps**
+        
         To set permission **sudo chown $USER /var/run/docker.sock
+        
+        
+        
+Step 5: Run Terraform commands:-
+
+        terraform init — **the terraform init command performs Backend Initialization, and Plugin Installation**
+        terraform plan — **shows you what actions will be taken without actually performing the planned actions**
+        terraform validate — **validates the configuration files in your directory and does not access any remote state or services**
+        terraform apply — **Creates or updates infrastructure depending on the configuration files** **Enter "YES" to validate"
+      
+      
+Step 6: Final Step you can now see the deployed docker image by running **localhost 8080**, if you are on your local machine
+
+        Otherwise you can also run the EC2 **Public IP address** to see the deployed docker image 
+        
