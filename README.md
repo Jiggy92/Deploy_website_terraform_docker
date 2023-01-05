@@ -81,7 +81,7 @@ Step 5: Run Terraform commands:-
 Step 6: Final Step you can now see the deployed docker image by running **localhost 8080**, if you are on your local machine
 
         Otherwise you can also run the EC2 **Public IP address** to see the deployed docker image 
-        
-        ![image](https://user-images.githubusercontent.com/113809732/210850157-3f3f290b-dd64-46b0-b038-ac5a4ab1248e.png)
+![nginx](https://user-images.githubusercontent.com/113809732/210851157-73f58591-4ec5-4b5b-a802-89c80635746f.png)
+
 
         
