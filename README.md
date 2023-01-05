@@ -66,7 +66,7 @@ Step 4: In case if docker is not installed
         
         List container **sudo docker ps**
         
-        To set permission **sudo chown $USER /var/run/docker.sock
+        To set permission **sudo chown $USER /var/run/docker.sock**
         
         
         
@@ -81,4 +81,7 @@ Step 5: Run Terraform commands:-
 Step 6: Final Step you can now see the deployed docker image by running **localhost 8080**, if you are on your local machine
 
         Otherwise you can also run the EC2 **Public IP address** to see the deployed docker image 
+        
+        ![image](https://user-images.githubusercontent.com/113809732/210850157-3f3f290b-dd64-46b0-b038-ac5a4ab1248e.png)
+
         
