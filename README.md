@@ -41,12 +41,12 @@ Step 3--Create a main.tf file with the below contents:-
 
 --Resource block has two strings before the block; resouce name and resource type. In this example the first resource type is docker_image and the name is Nginx
 
-resource "docker_image" "nginx" {
+**resource "docker_image" "nginx" {
 name           = "nginx:latest"
 keep_locally = false
 }
 
-resource "docker_container" "nginx" {
+**resource "docker_container" "nginx" {
 image = docker_image.nginx.latest
 name = "nginx-tf"
 ports {
@@ -55,4 +55,7 @@ ports {
 }
 }
 
---
+Step 4: In case if docker is not installed 
+        Install docker **sudo-apt-get install docker.io**
+        List container **sudo docker ps**
+        To set permission **sudo chown $USER /var/run/docker.sock
